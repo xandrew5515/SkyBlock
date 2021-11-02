@@ -94,7 +94,6 @@ class IslandCommandMap extends Command implements PluginIdentifiableCommand {
     }
 
     public function registerDefaultCommands(): void {
-        $this->registerCommand(new HelpCommand($this));
         $this->registerCommand(new CreateCommand($this));
         $this->registerCommand(new JoinCommand());
         $this->registerCommand(new LockCommand());
