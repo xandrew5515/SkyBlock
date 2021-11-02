@@ -52,10 +52,10 @@ class IslandCommandMap extends Command implements PluginIdentifiableCommand {
     public function __construct(SkyBlock $plugin) {
         $this->plugin = $plugin;
         parent::__construct("isle", "SkyBlock command", "Usage: /is", [
-            "uje"
+            "is"
 
         ]);
-        $plugin->getServer()->getCommandMap()->register("uje", $this);
+        $plugin->getServer()->getCommandMap()->register("is", $this);
     }
 
     /**
